@@ -11,7 +11,7 @@ const stripe = require('stripe')(process.env.PAYMENT_SECRET_KEY)
 const nodemailer = require('nodemailer')
 // middleware
 const corsOptions = {
-  origin: ['http://localhost:5173', 'http://localhost:5174'],
+  origin: ['http://localhost:5173', 'http://localhost:5174','https://home-rent-client-one.vercel.app'],
   credentials: true,
   optionSuccessStatus: 200,
 }
